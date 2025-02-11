@@ -152,6 +152,8 @@ const ReviewGrid = () => {
           />
         </>
       ) : null}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-slate-100" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-100" />
     </div>
   );
 };
@@ -163,7 +165,7 @@ export const Reviews = () => {
         src="/what-people-are-buying.png"
         alt=""
         aria-hidden="true"
-        className="absolute -left-32 top-1/3 select-none xl:block"
+        className="absolute -left-32 top-1/3 hidden select-none md:block xl:block"
       />
 
       <ReviewGrid />
